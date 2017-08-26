@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    height: 100vh;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.text {
+    font-family: Courier New, Courier, monospace;
+    border-bottom: 2px solid red;
+    padding: 10px;
+    line-height: 125%;
+}
