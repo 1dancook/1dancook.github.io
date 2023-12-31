@@ -9,12 +9,12 @@ permalink:        pretty
 title:            dancook
 tagline:          'profile'
 description:      'profile/blog for daniel cook'
-url:              http://1dancook.github.io
-baseurl:          
+url:              https://1dancook.github.io
+  #baseurl:
 
 author:
   name:           'Daniel Cook'
-  url:            http://1dancook.github.io
+  url:            https://1dancook.github.io
 
 paginate:         5
 plugins:             [jekyll-paginate]
