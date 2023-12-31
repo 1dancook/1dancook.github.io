@@ -249,3 +249,12 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
+
+/* tailwind */
+.theme-tailwind .sidebar {
+  background-color: #1e293b;
+}
+.theme-tailwind .content a,
+.theme-tailwind .related-posts li a:hover {
+  color: #1d4ed8;
+}
