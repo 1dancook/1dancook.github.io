@@ -10,7 +10,7 @@ title:            dancook
 tagline:          'profile'
 description:      'profile/blog for daniel cook'
 url:              http://1dancook.github.io
-baseurl:          /
+baseurl:          
 
 author:
   name:           'Daniel Cook'
