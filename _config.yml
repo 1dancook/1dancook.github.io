@@ -6,11 +6,11 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-title:            dancook
-tagline:          'profile'
-description:      'profile/blog for daniel cook'
-url:              https://1dancook.github.io
-  #baseurl:
+title:            'dancook'
+tagline:          ''
+description:      'profile/blog'
+url:              'https://1dancook.github.io'
+baseurl:              'https://1dancook.github.io'
 
 author:
   name:           'Daniel Cook'
