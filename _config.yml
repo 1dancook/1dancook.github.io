@@ -1,5 +1,5 @@
 # Dependencies
-markdown:         redcarpet
+markdown:         kramdown
 highlighter:      pygments
 
 # Permalinks
@@ -17,7 +17,7 @@ author:
   url:            http://1dancook.github.io
 
 paginate:         5
-gems:             [jekyll-paginate]
+plugins:             [jekyll-paginate]
 paginate_path:    "page:num"
 
 # Custom vars
