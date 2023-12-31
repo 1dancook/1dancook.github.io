@@ -1,0 +1,26 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            dancook
+tagline:          'profile'
+description:      'profile/blog for daniel cook'
+url:              http://1dancook.github.io
+baseurl:          /
+
+author:
+  name:           'Daniel Cook'
+  url:            http://1dancook.github.io
+
+paginate:         5
+
+# Custom vars
+version:          1.0.0
+
+github:
+  repo:           https://github.com/1dancook/1dancook.github.io
