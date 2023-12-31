@@ -2,9 +2,8 @@
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
       <a href="{{ site.url }}">
-        <img src="{{site.url}}/public/dc_logo.svg">
+        <img id="dclogo" style="margin: 2em auto; height: 9em;" src="{{site.url}}/public/dc_logo.svg">
       </a>
-      <p class="lead">{{ site.description }}</p>
     </div>
 
     <nav class="sidebar-nav">
@@ -26,6 +25,6 @@
 
     </nav>
 
-    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+    <p style="text-align: center; font-size: 0.8em;">&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>
 </div>
