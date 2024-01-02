@@ -258,3 +258,26 @@ a.sidebar-nav-item:focus {
 .theme-tailwind .related-posts li a:hover {
   color: #1e293b;
 }
+
+
+/* ----------------------- */
+
+div.dataframe-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.dataframe tbody tr th:only-of-type {
+    vertical-align: middle;
+}
+
+.dataframe tbody tr th {
+    vertical-align: top;
+}
+
+.dataframe thead th {
+    text-align: right;
+}
+.dataframe {
+    font-size: 0.7em;
+}
