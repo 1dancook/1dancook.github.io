@@ -1,6 +1,12 @@
-# Dependencies
-markdown:         kramdown
-highlighter:      pygments
+# Conversion
+markdown:    kramdown
+highlighter: rouge
+
+# Markdown Processors
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
 
 # Permalinks
 permalink:        pretty
@@ -16,11 +22,5 @@ author:
   url:            https://1dancook.github.io
 
 paginate:         5
-plugins:             [jekyll-paginate]
+plugins:          [jekyll-paginate]
 paginate_path:    "page:num"
-
-# Custom vars
-version:          1.0.0
-
-github:
-  repo:           https://github.com/1dancook/1dancook.github.io
