@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Some Analysis of Ishikawa Earthquakes
-category: python code earthquakes
+tags: python code pandas earthquakes japan
 ---
 
 There are still a number of afterschocks (current time is almost 9am, January 3rd). But, are the aftershocks keeping at the same pace?
