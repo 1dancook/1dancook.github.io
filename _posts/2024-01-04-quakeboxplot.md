@@ -1,3 +1,7 @@
+---
+title: Ishikawa Quakes boxplot
+layout: post
+---
 
 ```python
 iquakes.shape[0]
