@@ -26,4 +26,4 @@ iquakes.boxplot(
 
 ```
 
-![ishikawa aftershocks boxplot]({{site.url}}/2024-01-04-quakesboximg.png)
+![ishikawa aftershocks boxplot]({{site.url}}/assets/2024-01-04-quakeboximg.png)
