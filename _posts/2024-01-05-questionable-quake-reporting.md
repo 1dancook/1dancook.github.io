@@ -3,7 +3,7 @@ title: Wrong NHK Numbers about Ishikawa Quakes?
 layout: post
 ---
 
-Earlier this morning I check NHK's website for any updates about Ishikawa and the post-quake situation. I came across one sentence in an article that immediately stood out to me since I have been wrangling the quake data from JMA in pandas for the past few days. Something didn't seem right.
+Earlier this morning I checked NHK's website for updates about Ishikawa and the post-quake situation. I came across one sentence in an article that immediately stood out to me since I have been wrangling the quake data from JMA in pandas for the past few days. Something didn't add up.
 
 Here's the section from [the article](https://www3.nhk.or.jp/news/html/20240105/k10014309461000.html):
 
