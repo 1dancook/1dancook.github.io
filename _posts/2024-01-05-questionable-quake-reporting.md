@@ -77,7 +77,7 @@ quakes.loc[dt_mask].ttl.value_counts()
 
 ```text
 震源・震度情報                         537
-震度速報                             105
+震度速報                              105
 震源に関する情報                        41
 顕著な地震の震源要素更新のお知らせ          4
 ```
@@ -139,7 +139,7 @@ acd  en_anm
 854  Adjacent Sea of Ishigakijima Island                          1
 ```
 
-I'm a little rusty on my Japanese geography, but I do know that at least 4 of these entries are relevant:
+I'm a little rusty on my Japanese geography, but I do know that at least 6 of these entries are relevant:
 
 ```text
 acd  en_anm
@@ -147,13 +147,15 @@ acd  en_anm
 495  Off the Coast of Noto Peninsula                            145
 379  Off the Coast of Joetsu and Chuetsu, Niigata Prefecture     18
 498  Adjacent Sado                                               35
+494  Off the west Coast of Ishikawa Prefecture                    6
+497  Toyama Bay                                                   4
 ```
 
-Adding those together, I get a total of **526**. The counts from other areas are so small they make little difference. Remember, NHK's number was *786* -- and that was almost 16 hours ago.
+Adding those together, I get a total of **536**. The counts from other areas are so small they make little difference. Remember, NHK's number was *786* -- and that was almost 16 hours ago.
 
 ### Wrapping up
 
-Now with this information I *do* understand that my method of just checking for quakes from `390` was not adequate since there are other areas that are related and likely have an impact (as far as an aftershock is concerned). 
+Now with this information I *do* understand that my method of just checking for quakes from `390` was not adequate since there are other areas that are related and likely have an impact (as far as an aftershock is concerned). I believe part of my misunderstanding was due to how those codes work- and this bit of work from above helps to make that more clear.
 
 In a follow up at some point it would be good to actually use coordinates as a window. Another interesting angle would be to see how many earthquakes had a registered intensity on Noto peninsula.
 
