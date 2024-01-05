@@ -11,7 +11,7 @@ Here's the section from [the article](https://www3.nhk.or.jp/news/html/20240105/
 > 
 > また、新潟県と石川県、富山県、福井県、長野県、岐阜県で震度6弱から5弱を観測しました。  
 > 
-> 能登地方やその周辺を震源とする地震はその後も相次ぎ、震度1以上の揺れを観測した地震は5日午前4時までに786回にのぼっています。  
+> **能登地方やその周辺を震源とする地震はその後も相次ぎ、震度1以上の揺れを観測した地震は5日午前4時までに786回にのぼっています。**
 > 
 > 気象庁は、揺れの強かった地域では、家屋の倒壊や土砂災害などの危険性が高まっているため、1日の地震から1週間ほどは最大震度7程度の揺れに注意するよう呼びかけています。
 
@@ -77,10 +77,9 @@ quakes.loc[dt_mask].ttl.value_counts()
 
 ```text
 震源・震度情報                         537
-震度速報                               105
+震度速報                             105
 震源に関する情報                        41
-顕著な地震の震源要素更新のお知らせ       4
-Name: ttl, dtype: int64
+顕著な地震の震源要素更新のお知らせ          4
 ```
 
 I see a large number of actual epicenter entries (537). Let's see where those might be. The `en_anm` column is English area name. Let's see the value counts for those, but just the epicenter:
@@ -109,13 +108,12 @@ Northern Miyagi Prefecture                                   1
 Eastern Region · Fuji Five Lakes, Yamanashi Prefecture       1
 Off the east Coast of Osumi Peninsula                        1
 Iyonada Sea                                                  1
-Name: en_anm, dtype: int64
 ```
 
 Just to double check another thing - each area has a code. I had been using `390` since that seems to have been the code for Noto. Let's check the counts for those codes according to the English name, with the same filter from the above:
 
 ```python
-quakes.loc[dt_mask & (quakes.ttl == "震源・震度情報")].groupby(["acd", "en_anm"]).en_anm.co unt()
+quakes.loc[dt_mask & (quakes.ttl == "震源・震度情報")].groupby(["acd", "en_anm"]).en_anm.count()
 ```
 
 **Result:**
@@ -139,19 +137,19 @@ acd  en_anm
 798  Adjacent Sea of Tokara Islands                               1
 820  Off the east Coast of Osumi Peninsula                        1
 854  Adjacent Sea of Ishigakijima Island                          1
-Name: en_anm, dtype: int64
 ```
 
 I'm a little rusty on my Japanese geography, but I do know that at least 4 of these entries are relevant:
 
 ```text
+acd  en_anm
 390  Noto, Ishikawa Prefecture                                  318
 495  Off the Coast of Noto Peninsula                            145
 379  Off the Coast of Joetsu and Chuetsu, Niigata Prefecture     18
 498  Adjacent Sado                                               35
 ```
 
-Adding those together, I get a total of **526**. The other numbers are so small it is negligible. Remember, NHK's number was *786* -- and that was almost 16 hours ago.
+Adding those together, I get a total of **526**. The counts from other areas are so small they make little difference. Remember, NHK's number was *786* -- and that was almost 16 hours ago.
 
 ### Wrapping up
 
@@ -159,4 +157,4 @@ Now with this information I *do* understand that my method of just checking for 
 
 In a follow up at some point it would be good to actually use coordinates as a window. Another interesting angle would be to see how many earthquakes had a registered intensity on Noto peninsula.
 
-However, the number here is less than what NHK reported. It seems there was either an error on NHK's part, or JMA shares non-public data with them - but it can't be intential error... the government run media would never lie to us.
+However, the number here is less than what NHK reported. It seems there was either an error on NHK's part, or JMA shares non-public data with them - but it can't be an intentional error... the government run media would never lie to us.
